@@ -25,12 +25,15 @@ A simple web app to generate captions for uploaded images using the [nlpconnect/
 ```bash
 git clone https://github.com/Arbin17/ImageCaption
 cd ImageCaption
-
+```
 ### 2️⃣ Create virtual environment
+```
 python -m venv venv
 source venv/bin/activate  # Linux / Mac
 # OR
 venv\Scripts\activate     # Windows
-
+```
 3️⃣ Install dependencies
+```
 pip install -r requirements.txt
+```
