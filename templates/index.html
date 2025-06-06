@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Captioning Demo</title>
+</head>
+<body>
+    <h2>Upload an Image to Generate Caption</h2>
+    <form action="/upload" enctype="multipart/form-data" method="post">
+        <input name="file" type="file" accept="image/*" required>
+        <input type="submit" value="Upload">
+    </form>
+
+    {% if image_path %}
+        <h3>Uploaded Image:</h3>
+        <img src="{{ image_path }}" alt="Uploaded Image" width="400px">
+    {% endif %}
+
+    {% if caption %}
+        <h3>Generated Caption:</h3>
+        <p>{{ caption }}</p>
+    {% endif %}
+</body>
+</html>
